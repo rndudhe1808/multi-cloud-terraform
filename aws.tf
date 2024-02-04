@@ -1,5 +1,7 @@
 provider "aws" {
-  region = "us-east-1"  
+  region = "us-east-1"
+  access_key = "AKIAQ3EGRUYMPDGH6ZEQ"
+  secret_key = "QcjOz2rXhQtOgHeVYTN80RGyoSvr5U8arRb9h7R/"  
 }
 
 # Create VPC
@@ -26,7 +28,7 @@ resource "aws_subnet" "example_subnet" {
 
 # Create EC2 Instance in the Subnet
 resource "aws_instance" "ec2_instance" {
-  ami           = "ami-xxxxxxxxxxxxxxxxx"  # Replace with your desired AMI ID
+  ami           = "ami-0277155c3f0ab2930"  # Replace with your desired AMI ID
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.example_subnet.id
 
