@@ -1,6 +1,6 @@
 module "aws" {
-    source = "/aws/"
+    source = "/root/multi-cloud/aws/"
 }
 module "gcp1" {
-    source = "/gcp/"
+    source = "/root/multi-cloud/gcp/"
 }
